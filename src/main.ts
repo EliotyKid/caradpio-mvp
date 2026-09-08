@@ -8,7 +8,7 @@ const arButton = document.querySelector<HTMLButtonElement>('#ar-button')!;
 const retry = document.querySelector<HTMLButtonElement>('#retry')!;
 const reset = document.querySelector<HTMLButtonElement>('#reset')!;
 const fallback = document.querySelector<HTMLImageElement>('#fallback')!;
-const modelUrl = `${import.meta.env.BASE_URL}models/pizza_frango/pizza_frango_catupiry_35cm.glb`;
+const modelUrl = `${import.meta.env.BASE_URL}models/pizza_frango2/pizza_referencia.glb`;
 let timeout: ReturnType<typeof setTimeout>;
 let attempt = 0;
 

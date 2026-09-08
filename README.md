@@ -1,6 +1,6 @@
 # Cardápio 3D
 
-Protótipo de um cardápio de pizzaria com visualização 3D e realidade aumentada. A primeira entrega usa a pizza de frango com catupiry já fornecida.
+Protótipo de um cardápio de pizzaria com visualização 3D e realidade aumentada. A aplicação usa o modelo `models/pizza_frango2/pizza_referencia.glb`, com sua prévia correspondente: pizza de 35 cm, assadeira de 39 cm e base de madeira de 42 cm, conforme as notas do modelo.
 
 ## Executar
 
