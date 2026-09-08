@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f2ea" />
+    <meta name="description" content="Explore uma pizza em 3D e visualize seu tamanho na sua mesa." />
+    <title>À mesa — Pizza em 3D</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="brand" href="./" aria-label="À mesa, início">à mesa<span>●</span></a>
+      <span class="edition">UMA NOVA FORMA DE ESCOLHER</span>
+      <span class="prototype">Protótipo · 01</span>
+    </header>
+    <main>
+      <div class="intro"><span class="eyebrow">DO FORNO PARA A SUA MESA</span><p>Conheça de perto, antes da primeira fatia.</p></div>
+      <article class="product">
+        <section class="visual" aria-label="Visualização da pizza">
+          <div class="visual-heading"><span class="tag">EXPLORE EM 3D</span><span>01 / Pizza</span></div>
+          <div class="stage">
+            <img id="fallback" class="fallback" src="/models/pizza_frango/pizza_preview.png" alt="Prévia da pizza de frango com catupiry sobre um prato" />
+            <model-viewer id="pizza-viewer"
+              alt="Pizza de frango com catupiry de 35 centímetros sobre prato de 39 centímetros"
+              camera-controls touch-action="pan-y" shadow-intensity="1"
+              camera-orbit="25deg 45deg auto" min-camera-orbit="auto 10deg auto" max-camera-orbit="auto 85deg auto"
+              ar ar-modes="scene-viewer quick-look" ar-scale="fixed" ar-placement="floor"
+              loading="eager" reveal="auto">
+              <button slot="ar-button" hidden aria-hidden="true" tabindex="-1"></button>
+            </model-viewer>
+          </div>
+          <div class="viewer-footer"><p id="viewer-status" role="status">Preparando a visualização 3D…</p><button id="retry" class="text-button" hidden>Tentar novamente</button><button id="reset" class="text-button" hidden>Restaurar vista ↺</button></div>
+        </section>
+        <section class="details" aria-labelledby="product-name">
+          <span class="eyebrow">PIZZA · TAMANHO GRANDE</span>
+          <h1 id="product-name">Frango com<br /><em>catupiry.</em></h1>
+          <p class="description">Explore a pizza por todos os ângulos e descubra como ela ocupa a sua mesa.</p>
+          <dl class="dimensions"><div><dt>Diâmetro da pizza</dt><dd>35 <span>cm</span></dd></div><div><dt>Diâmetro do prato</dt><dd>39 <span>cm</span></dd></div></dl>
+          <p class="scale-note">Modelo em escala 1:1. Medidas informadas pelo arquivo de referência; conferência física pendente.</p>
+          <button id="ar-button" class="primary" disabled><span aria-hidden="true">⌗</span> Ver na sua mesa <span aria-hidden="true">↗</span></button>
+          <p id="ar-status" class="ar-help" role="status">Preparando a experiência de realidade aumentada…</p>
+          <div class="how-to"><span class="step">1</span><p><strong>Encontre um espaço na mesa.</strong><br />No celular compatível, aponte para uma superfície bem iluminada e mova o aparelho devagar.</p></div>
+          <p class="disclaimer">Prévia demonstrativa. A aparência do preparo pode variar. O prato faz parte deste modelo; sua inclusão na entrega ainda não foi confirmada.</p>
+        </section>
+      </article>
+    </main>
+    <footer class="footer"><span>Feito para abrir o apetite.</span><span>Experiência 3D · Em validação</span></footer>
+    <noscript><p class="noscript">Ative o JavaScript para explorar em 3D. A foto e as medidas continuam disponíveis nesta página.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

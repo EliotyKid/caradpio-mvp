@@ -1,0 +1,31 @@
+# Cardápio 3D
+
+Protótipo de um cardápio de pizzaria com visualização 3D e realidade aumentada. A primeira entrega usa a pizza de frango com catupiry já fornecida.
+
+## Executar
+
+```sh
+npm install
+npm run dev
+```
+
+O terminal informa os endereços local e de rede. Para conferir a versão de produção:
+
+```sh
+npm run build
+npm run preview
+```
+
+Publicar o conteúdo de `dist/` em hospedagem estática HTTPS para testar RA nos celulares. O protótipo usa caminhos a partir da raiz do domínio. Não há backend, banco ou variáveis de ambiente.
+
+## Conteúdo 3D
+
+Os arquivos originais ficam em `models/`; as cópias utilizadas pelo site ficam em `public/models/`. Ao atualizar um modelo, atualizar também sua cópia pública. Nesta fase usamos o GLB sem Draco e a conversão automática de USDZ do model-viewer no iPhone. A RA usa Scene Viewer e Quick Look, com escala fixa; a escala física ainda precisa ser validada.
+
+O código carrega o componente 3D dinamicamente para manter a foto e informações disponíveis se esse carregamento falhar. Não são coletadas imagens da câmera pela aplicação.
+
+- [Arquitetura e decisões](PLANEJAMENTO.md)
+- [Etapas e critérios de aprovação](ETAPAS.md)
+- [Registro dos testes físicos](docs/validacao-dispositivos.md)
+- [Documentação do model-viewer](https://modelviewer.dev/docs/index.html)
+- [Documentação do Vite](https://vite.dev/guide/)

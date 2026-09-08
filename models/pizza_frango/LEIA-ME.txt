@@ -1,0 +1,10 @@
+Pizza de frango com catupiry
+
+Pizza: 0,350 m de diâmetro. Prato: 0,390 m. Escala 1 unidade = 1 metro.
+GLB padrão: pizza_frango_catupiry_35cm.glb; sem decodificadores adicionais.
+GLB Draco: pizza_frango_catupiry_35cm_draco.glb; requer suporte Draco no visualizador. A compressão introduz quantização mínima nas posições; use o GLB padrão quando a precisão dimensional for prioritária.
+55.372 triângulos, 6 malhas, 4 materiais e atlas de cor 1024 x 1024 incorporado.
+Texturas incluídas também no pizza.blend. Prato separado dos ingredientes.
+Câmera e luzes de apresentação ficam somente no Blender. GLB com eixo Y para cima.
+Manter escala (1,1,1) no projeto web para preservar dimensões.
+Prévia: pizza_preview.png com fundo transparente.
