@@ -2,6 +2,10 @@
 
 Nenhum teste físico de RA foi executado até o momento.
 
+## Accordion — 08/09/2026
+
+Verificação automatizada no Chromium: zero requisições GLB e zero visualizadores ao entrar; abrir placeholder também não cria visualizador. Abrir frango carrega um GLB e mantém um único item aberto. Trocar de sabor remove o visualizador; reabrir frango carrega corretamente. Sem erros JavaScript e sem transbordamento horizontal em 390 px. Capturas de desktop e celular conferidas; TypeScript e build aprovados. RA física continua pendente.
+
 ## Verificação local da parte 1 — 08/09/2026
 
 - TypeScript e build de produção passaram.
